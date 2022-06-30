@@ -49,6 +49,8 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
+            ],[
+            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/LisaZerobot?startgroup=true')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
